@@ -44,7 +44,7 @@ services:
        #- 6400:6400  # pg protocol handler
        #- 9898:9898 # http endpoints
     volumes:
-      - ./pageserver_config:/data/.neon/
+      - ./docker-compose/pageserver_config:/data/.neon/
     depends_on:
       - storage_broker
       - minio_create_buckets
