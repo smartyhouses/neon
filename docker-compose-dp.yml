@@ -189,5 +189,5 @@ networks:
     external: true
 
 volumes:
-  compute_wrapper: {}
-  pageserver_config: {}
+  ./docker-compose/compute_wrapper: {}
+  ./docker-compose/pageserver_config: {}
