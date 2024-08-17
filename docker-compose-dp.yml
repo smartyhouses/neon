@@ -188,6 +188,6 @@ networks:
   dokploy-network:
     external: true
 
-volumes:
-  /data/.neon: {}
-  /var/db/postgres/specs/: {}
+#volumes:
+#  /data/.neon: {}
+#  /var/db/postgres/specs/: {}
