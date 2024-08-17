@@ -142,8 +142,8 @@ services:
       #- RUST_BACKTRACE=1
     # Mount the test files directly, for faster editing cycle.
     volumes:
-      - ./compute_wrapper/var/db/postgres/specs/:/var/db/postgres/specs/
-      - ./compute_wrapper/shell/:/shell/
+      - ./docker-compose/compute_wrapper/var/db/postgres/specs/:/var/db/postgres/specs/
+      - ./docker-compose/compute_wrapper/shell/:/shell/
     #ports:
     #  - 55433:55433 # pg protocol handler
     #  - 3080:3080 # http endpoints
