@@ -129,8 +129,8 @@ services:
     restart: always
     networks:
       - dokploy-network
-      #build: https://github.com/smartyhouses/neon.git/docker-compose/compute_wrapper
-      context: ./docker-compose/compute_wrapper/
+      build: #https://github.com/smartyhouses/neon.git/docker-compose/compute_wrapper
+        context: ./docker-compose/compute_wrapper/
       args:
         - REPOSITORY=${REPOSITORY:-neondatabase}
         - COMPUTE_IMAGE=compute-node-v${PG_VERSION:-16}
