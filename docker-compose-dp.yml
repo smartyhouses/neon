@@ -189,5 +189,5 @@ networks:
     external: true
 
 volumes:
-  docker-compose/compute_wrapper: {}
-  docker-compose/pageserver_config: {}
+  /data/.neon: {}
+  /var/db/postgres/specs/: {}
